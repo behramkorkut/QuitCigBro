@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuitcigMainActivity"
+    android:padding="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/quitcigsplahscreen"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="cigarette pack price :"
+                android:layout_weight="3"
+                android:lines="3"
+                android:background="@android:color/white"
+                android:gravity="center"
+                />
+            <EditText
+                android:id="@+id/et_cig_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:layout_weight="1"
+                android:text="8"
+                android:inputType="numberDecimal"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="euros"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="number of cigarettes smoked in one day :"
+                android:layout_weight="3"
+                android:lines="3"
+                android:gravity="center"
+                android:background="@android:color/white"
+                />
+            <EditText
+                android:id="@+id/et_number_cig_smoked"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:layout_weight="1"
+                android:text="10"
+                android:inputType="number"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="cigarettes"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:src="@drawable/quitcig_fist"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="press to insert time of first cig of the day:"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/et_first_cig_smoked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:layout_weight="2"
+                android:hint="08:00"
+                android:textColor="@android:color/white"
+                android:background="@color/material_orange"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="press to insert time of last cig of the day:"
+                android:layout_weight="3"
+                android:textAlignment="center"
+                />
+            <TextView
+                android:id="@+id/et_last_cig_smoked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLength="5"
+                android:layout_weight="2"
+                android:hint="22:00"
+                android:textColor="@android:color/white"
+                android:background="@color/material_red"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_start"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Start the cig reminder"
+            android:textAllCaps="false"
+            android:gravity="bottom"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/button_stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop the  cig reminder"
+        android:textAllCaps="false"
+        android:gravity="top"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_send_notif_specific_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="send a notif at specific time"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button_getCurrentTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get current time"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+
+
+
+
+</LinearLayout>
